@@ -37,7 +37,7 @@ import { EditableUserDetailsComponent } from './components/editable-user-details
 import { UpdateUserComponent } from './components/update-user/update-user.component';
 import { EditableEventDetailsComponent } from './components/editable-event-details/editable-event-details.component';
 import { UpdateEventComponent } from './components/update-event/update-event.component';
-import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { FindMenuEventComponent } from './components/find-menu-event/find-menu-event.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +51,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
     GetGiftStatusPipe,
     GetGiftImageId,
     FindEventComponent,
+    FindMenuEventComponent,
     HomeComponent,
     FriendEventComponent,
     GiftsTableComponent,
@@ -59,8 +60,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
     EditableUserDetailsComponent,
     UpdateUserComponent,
     EditableEventDetailsComponent,
-    UpdateEventComponent,
-    SideNavComponent,
+    UpdateEventComponent
     ],
   imports: [
     BrowserModule,
