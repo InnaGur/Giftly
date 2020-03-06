@@ -1,3 +1,7 @@
+$color-menu: #4DDCD6;
+$color-main-background: white;
+$color-menu-text: white;
+
 .start-img{
     height: 200px;
     width: auto;
@@ -7,9 +11,10 @@
     z-index: 99;
 	position: fixed;
     top: 0%;
-    background-color: #4DDCD6;
+    background-color: $color-menu;
     width: 100vw;
     min-height: 1cm;
+    color: $color-menu-text;
 }
 
 mat-drawer-container{
@@ -27,4 +32,4 @@ mat-drawer-container{
   
     overflow: auto;
     overscroll-behavior-y: contain;
-  }
+}

@@ -1,3 +1,7 @@
+$color-menu: #4DDCD6;
+$color-main-background: white;
+$color-menu-text: white;
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -17,6 +21,7 @@ a.navbar-brand {
 
 html {
   // font-size: 14px;
+  color: $color-menu-text;
 }
 // @media (min-width: 768px) {
 //   html {
@@ -26,4 +31,10 @@ html {
 
 .box-shadow {
   box-shadow: 0 0.25rem 0.75rem rgba(155, 24, 24, 0.05);
+}
+
+.nav-link {
+  //cursor: pointer;
+  color: $color-menu-text;// #1976d2;
+  text-decoration: none;
 }

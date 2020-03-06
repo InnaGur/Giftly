@@ -5,19 +5,19 @@
           <li class="nav-item"
             [routerLinkActive]="['link-active']"
             [routerLinkActiveOptions]="{ exact: true }" >
-            <a class="nav-link text-dark" routerLink="/home" >Home</a>
+            <a class="nav-link text-dark" routerLink="/home">Home</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']"  *ngIf="isUserLoggedIn">
             <a class="nav-item nav-link" routerLink="/update-profile">Update Profile</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="isUserLoggedIn">
-            <a routerLink="events-dashboard" routerLinkActive="active">Your Events</a>
+            <a class="nav-item nav-link" routerLink="events-dashboard">Your Events</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="isUserLoggedIn">
-            <a routerLink="new-event" routerLinkActive="active">New Event</a>
+            <a class="nav-item nav-link" outerLink="new-event">New Event</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="isUserLoggedIn">
-            <a routerLink="find-event" routerLinkActive="active">Find Event (Friend)</a>
+            <a class="nav-item nav-link" routerLink="find-event">Find Event (Friend)</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']"  *ngIf="!isUserLoggedIn">
             <a class="nav-item nav-link" routerLink="/login">Login</a>

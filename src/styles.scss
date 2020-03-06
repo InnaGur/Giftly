@@ -1,3 +1,7 @@
+$color-menu: #4DDCD6;
+$color-main-background: white;
+$color-menu-text: white;
+
 /* Global Styles */
 @import "~@ag-grid-community/all-modules/dist/styles/ag-grid.css";
 @import "~@ag-grid-community/all-modules/dist/styles/ag-theme-balham.css";
@@ -20,11 +24,11 @@ body {
 }
 
 .mat-drawer.mat-drawer-push, .mat-drawer-side, .mat-drawer-inner-container {
-  background-color: #4DDCD6;
+  background-color: $color-menu;
   min-height: 100vh;
 }
 .mat-drawer-inner-container{
-  background-color: #4DDCD6;
+  background-color: $color-menu;
 }
 
 body {
@@ -35,7 +39,7 @@ body {
   padding-left: 20px;
 }
 .mat-drawer-container {
-  background-color: white;
+  background-color: $color-main-background;
 }
 
 /* Text */
@@ -57,12 +61,6 @@ p {
 }
 
 /* Hyperlink */
-
-a {
-  cursor: pointer;
-  color: #1976d2;
-  text-decoration: none;
-}
 
 a:hover {
   opacity: 0.8;
