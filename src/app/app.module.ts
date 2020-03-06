@@ -22,7 +22,8 @@ import { MatCardModule, MatInputModule, MatButtonModule, MatFormFieldModule,
   MatDatepickerModule, MatNativeDateModule, MatSelectModule, MatButtonToggleModule,
   MatIconModule, 
   MatDialogModule,
-  MatTableModule} from '@angular/material';
+  MatTableModule,
+  MatSidenavModule} from '@angular/material';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
@@ -36,6 +37,7 @@ import { EditableUserDetailsComponent } from './components/editable-user-details
 import { UpdateUserComponent } from './components/update-user/update-user.component';
 import { EditableEventDetailsComponent } from './components/editable-event-details/editable-event-details.component';
 import { UpdateEventComponent } from './components/update-event/update-event.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,8 @@ import { UpdateEventComponent } from './components/update-event/update-event.com
     EditableUserDetailsComponent,
     UpdateUserComponent,
     EditableEventDetailsComponent,
-    UpdateEventComponent
+    UpdateEventComponent,
+    SideNavComponent,
     ],
   imports: [
     BrowserModule,
@@ -77,6 +80,7 @@ import { UpdateEventComponent } from './components/update-event/update-event.com
     MatButtonToggleModule,
     MatDialogModule,
     MatTableModule,
+    MatSidenavModule,
     AgGridModule.withComponents([]),
     CookieModule.forRoot()
   ],

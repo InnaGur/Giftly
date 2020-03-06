@@ -2,3 +2,29 @@
     height: 200px;
     width: auto;
 }
+
+.top-menu{
+    z-index: 99;
+	position: fixed;
+    top: 0%;
+    background-color: #4DDCD6;
+    width: 100vw;
+    min-height: 1cm;
+}
+
+mat-drawer-container{
+    min-height: 100vh;
+}
+
+.container, mat-drawer-container {
+    margin-top: 1cm;
+    overflow: hidden;
+    scroll-behavior: unset;
+}
+
+.drawer-content {
+    overflow-y: auto;
+  
+    overflow: auto;
+    overscroll-behavior-y: contain;
+  }

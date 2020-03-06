@@ -2,12 +2,40 @@
 @import "~@ag-grid-community/all-modules/dist/styles/ag-grid.css";
 @import "~@ag-grid-community/all-modules/dist/styles/ag-theme-balham.css";
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
-
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url(//db.onlinewebfonts.com/c/74e9b16286eecda22e2b1d41b1a5ab77?family=Brain+Flower);
+//@font-face {font-family: "Brain Flower"; src: url("//db.onlinewebfonts.com/t/74e9b16286eecda22e2b1d41b1a5ab77.eot"); src: url("//db.onlinewebfonts.com/t/74e9b16286eecda22e2b1d41b1a5ab77.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/74e9b16286eecda22e2b1d41b1a5ab77.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/74e9b16286eecda22e2b1d41b1a5ab77.woff") format("woff"), url("//db.onlinewebfonts.com/t/74e9b16286eecda22e2b1d41b1a5ab77.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/74e9b16286eecda22e2b1d41b1a5ab77.svg#Brain Flower") format("svg"); }
 * {
-  font-family: 'Roboto', Arial, sans-serif;
+  // font-family:'Brain Flower', 'Comic Sans MS', serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+html {
+  // overflow: hidden;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.mat-drawer.mat-drawer-push, .mat-drawer-side, .mat-drawer-inner-container {
+  background-color: #4DDCD6;
+  min-height: 100vh;
+}
+.mat-drawer-inner-container{
+  background-color: #4DDCD6;
+}
+
+body {
+  margin: 0;
+}
+
+.mat-drawer-content{
+  padding-left: 20px;
+}
+.mat-drawer-container {
+  background-color: white;
 }
 
 /* Text */
@@ -21,7 +49,7 @@ h2 {
 }
 
 h1, h2 {
-  font-weight: lighter;
+  //font-weight: lighter;
 }
 
 p {
