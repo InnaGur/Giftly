@@ -21,6 +21,11 @@ mat-drawer-container{
     min-height: 100vh;
 }
 
+
+.mat-drawer {
+    max-width: 18%;
+}
+
 .container, mat-drawer-container {
     margin-top: 1cm;
     overflow: hidden;
