@@ -2,7 +2,8 @@
   <div class="top-menu">
     <button mat-button (click)="drawer.toggle()">
       <mat-icon aria-hidden="true">menu</mat-icon>
-    </button>          
+    </button>  
+    <giftly-find-menu-event></giftly-find-menu-event>        
   </div>
   <mat-drawer-container class="mat-drawer-container" [hasBackdrop]="false">
     <mat-drawer #drawer mode="push" [opened]="true">

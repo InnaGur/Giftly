@@ -13,7 +13,7 @@ $color-menu-text: white;
     top: 0%;
     background-color: $color-menu;
     width: 100vw;
-    min-height: 1cm;
+    min-height: 1.3cm;
     color: $color-menu-text;
 }
 
@@ -27,7 +27,7 @@ mat-drawer-container{
 }
 
 .container, mat-drawer-container {
-    margin-top: 1cm;
+    margin-top: 1.3cm;
     overflow: hidden;
     scroll-behavior: unset;
 }
