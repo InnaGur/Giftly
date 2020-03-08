@@ -29,8 +29,8 @@ export class FindMenuEventComponent implements OnInit {
     } else {
       this.dialog.open(NotifyUserDialogComponent, 
         {'data' : 
-          {"title" : "There is no such event.", 
-          "message" : "Sorry, there is no event with ID: " + this.value + ". Please make sure you have the right event ID."}});
+          {"title" : "Sorry... such event.", 
+          "message" : "Maybe you'll have more luck with a different event"}});
     }
     this.value = '';
   }

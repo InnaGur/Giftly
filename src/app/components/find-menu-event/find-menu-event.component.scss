@@ -18,5 +18,19 @@ $color-menu-text: white;
 }
 
 mat-icon {
-    margin-top: 10%;
+   margin-top: 10%;
+}
+
+span.deleteicon {
+    position: relative;
+}
+span.deleteicon span {
+    position: absolute;
+    display: block;
+    top: -50%;
+    right: 10px;
+    cursor: pointer;
+}
+span.deleteicon input {
+    box-sizing: border-box;
 }

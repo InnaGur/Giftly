@@ -1,17 +1,9 @@
-<!-- <h1>{{page_title}}</h1> -->
-<!-- <div> -->
-  <!-- <mat-form-field class="giftly-form-field"> -->
-    <!-- <input matInput type="search" placeholder="Search event" [(ngModel)]="value" id="eventId"> -->
-  <input matInput type="search" [(ngModel)]="value" placeholder="Search event" type="text" id="search"/>
-  <button mat-button *ngIf="value"  matSuffix mat-icon-button aria-label="Clear" (click)="value=''">    
-    <mat-icon aria-hidden="true">x</mat-icon>  
-  </button>   
-  <!-- </mat-form-field> -->
-  <!-- <button mat-raised-button color="primary" (click)="searchEvent()"> -->
-  <button mat-button (click)="searchEvent()">
-    <mat-icon aria-hidden="true">search</mat-icon>
-  </button>
-  <!-- <button mat-button (click)="drawer.toggle()">
-    <mat-icon aria-hidden="true">menu</mat-icon>
-  </button>  -->
-<!-- </div> -->
+<span class="deleteicon">
+  <input type="search" [(ngModel)]="value" placeholder="Search event" type="text" id="search"/>
+    <span onclick="var input = this.previousSibling; input.value = ''; input.focus();">
+        <mat-icon aria-hidden="true">clear</mat-icon>
+    </span>
+</span>
+<button mat-button (click)="searchEvent()">
+  <mat-icon aria-hidden="true">search</mat-icon>
+</button>
