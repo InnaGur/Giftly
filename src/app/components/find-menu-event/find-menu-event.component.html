@@ -1,9 +1,9 @@
 <span class="deleteicon">
   <input type="search" [(ngModel)]="value" placeholder="Search event" type="text" id="search"/>
     <span onclick="var input = this.previousSibling; input.value = ''; input.focus();">
-        <mat-icon aria-hidden="true">clear</mat-icon>
+        <mat-icon class="giftly-menu-icon" aria-hidden="true">clear</mat-icon>
     </span>
 </span>
 <button mat-button (click)="searchEvent()">
-  <mat-icon aria-hidden="true">search</mat-icon>
+  <mat-icon class="giftly-menu-icon">search</mat-icon>
 </button>
