@@ -23,7 +23,8 @@ import { MatCardModule, MatInputModule, MatButtonModule, MatFormFieldModule,
   MatIconModule, 
   MatDialogModule,
   MatTableModule,
-  MatSidenavModule} from '@angular/material';
+  MatSidenavModule,
+  MatMenuModule} from '@angular/material';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
@@ -38,6 +39,7 @@ import { UpdateUserComponent } from './components/update-user/update-user.compon
 import { EditableEventDetailsComponent } from './components/editable-event-details/editable-event-details.component';
 import { UpdateEventComponent } from './components/update-event/update-event.component';
 import { FindMenuEventComponent } from './components/find-menu-event/find-menu-event.component';
+import { AccountMenuComponent } from './components/account-menu/account-menu.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,8 @@ import { FindMenuEventComponent } from './components/find-menu-event/find-menu-e
     EditableUserDetailsComponent,
     UpdateUserComponent,
     EditableEventDetailsComponent,
-    UpdateEventComponent
+    UpdateEventComponent,
+    AccountMenuComponent
     ],
   imports: [
     BrowserModule,
@@ -81,6 +84,7 @@ import { FindMenuEventComponent } from './components/find-menu-event/find-menu-e
     MatDialogModule,
     MatTableModule,
     MatSidenavModule,
+    MatMenuModule,
     AgGridModule.withComponents([]),
     CookieModule.forRoot()
   ],
